@@ -1,0 +1,48 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title><h1>Add a table</h1></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form action="" [formGroup]="addTableForm">
+      <div>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Icon</mat-label>
+          <mat-select formControlName="icon">
+            <mat-option value="one" style="height: auto">
+              <emoji-mart
+                darkMode="false"
+                (emojiClick)="addEmoji($event)"
+              ></emoji-mart>
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label>Color</mat-label>
+          <mat-select formControlName="color">
+            <mat-option value="one">
+              <emoji-mart (emojiClick)="addEmoji($event)"></emoji-mart
+            ></mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-dialog-actions>
+      <button class="add" [mat-dialog-close]="returnTable()" mat-button>
+        ADD
+      </button>
+      <button class="cancel" [mat-dialog-close]="false" mat-button>
+        CANCEL
+      </button>
+    </mat-dialog-actions>
+  </mat-card-actions>
+</mat-card>

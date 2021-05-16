@@ -1,0 +1,49 @@
+mat-card {
+  height: 550px;
+  width: 550px;
+}
+
+mat-card-header {
+  margin-left: 40px;
+  margin-top: 40px;
+  h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+}
+
+mat-form-field {
+  width: 100%;
+}
+mat-select {
+  width: 470px;
+  height: 40px;
+}
+
+input {
+  width: 470px;
+  height: 40px;
+}
+
+mat-card-actions {
+  margin-top: 26px;
+  button {
+    width: 150px;
+    height: 45px;
+  }
+}
+.add {
+  background-color: #3c3c3c;
+  color: white;
+}
+.cancel {
+  border: 2px solid #334bfa;
+  color: #334bfa;
+}
+
+textarea {
+  width: 470px;
+  height: 125px;
+}

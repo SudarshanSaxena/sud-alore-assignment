@@ -1,0 +1,50 @@
+mat-drawer-container {
+  height: 100%;
+}
+mat-drawer {
+  width: 280px;
+  height: 100%;
+  background-color: #f1f1f1;
+  .title {
+    margin-left: 75px;
+    margin-top: 29px;
+  }
+  h3 {
+    color: #3c3c3c;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    margin-top: 20px;
+    margin-left: 19px;
+  }
+  input {
+    margin-left: 20px;
+    width: 219px;
+    height: 25px;
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.add-segment {
+  width: 255px;
+  height: 35px;
+  color: white;
+  background-color: #334bfa;
+  border-radius: 5px;
+  margin-top: 200px;
+}
+
+.sidebar-segment {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}

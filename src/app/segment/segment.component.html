@@ -1,0 +1,8 @@
+<p>{{ name }}</p>
+<div *ngFor="let table of tables" class="container">
+  <div class="box">
+    <div class="icon">{{ table.icon }}</div>
+    <div class="name">{{ table.name }}</div>
+  </div>
+</div>
+<button (click)="addTable()">Add Table</button>
